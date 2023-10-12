@@ -1,0 +1,159 @@
+master::ip: 192.168.50.10
+repo::ip: 192.168.50.11
+timezone: 'America/Los_Angeles'
+ssh_keys:
+  'jenkins-agent@master-buildfarm':
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDZ9OJmJKqlCD5ibVejC/yhWdOKKRnhwNp2js4WIhUOVtkx76oqVBqR1dOd/UZHUpMLt3gg7IjIK8ldlJeafy8VD0OW+9ps4d8jyxm6FyfTNdp8/9E6W6Cw/UocjEBHuGksX7HOeC1fKmBqIoPU1BtwA/HkEhA9AaMc0rF02LgWGUWIMTGREoBhRLfDLtoDeCu3QwDyf2Kxn8UcMk9M92Uiv7KRKJqSsb1i1jMVvITGSEXY88tp6E1GXH/dUIjVe1IRB5g/oUM7luBSGKJeUbY10unI7DJIvKSxYNZHkYnAW+pUpDAc+ominkfCw+2MlkVqjlnMYDs2u+YxogXgCSjl'
+    type: ssh-rsa
+    user: jenkins-agent
+    require: 'User[jenkins-agent]'
+jenkins::slave::ui_user: admin
+jenkins::slave::ui_pass: 'changeme'
+user::admin::name: admin
+user::admin::password_hash: '#jbcrypt:$2a$10$g5Grm4HqBt8pz6MVZ852WeTAFJ6yMpf5tvdhreI0Upoq0N9CfIhrO'
+jenkins::private_ssh_key: |-
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEowIBAAKCAQEA2fTiZiSqpQg+Ym1Xowv8oVnTiikZ4cDado7OFiIVDlbZMe+q
+  KlQakdXTnf1GR1KTC7d4IOyIyCvJXZSXmn8vFQ9DlvvabOHfI8sZuhcn0zXafP/R
+  OlugsP1KHIxAR7hpLF+xzngtXypgaiKD1NQbcAPx5BIQPQGjHNKxdNi4FhlFiDEx
+  kRKAYUS3wy7aA3grt0MA8n9isZ/FHDJPTPdlIr+ykSiakrG9YtYzFbyExkhF2PPL
+  aehNRlx/3VCI1XtSEQeYP6FDO5bgUhiiXlG2NdLpyOwySLyksWDWR5GJwFvqVKQw
+  HPqJop5HwsPtjJZFao5ZzGA7NrvmMaIF4Ako5QIDAQABAoIBAEfl+2U8hTpJnOK1
+  NSqpAp5rVlgGNO5+wtJHS36LoayIQ7+wUs8BzX38LoG4kh1nBPDhhfQ+cuStZRDE
+  uroRaIOm9GHzFNvEKurQzdzQVKfc5QVFEk0Q+tJHy9HdBjtifvdPXgVBKZ5yCToZ
+  xqlHiwGJm5rjxo2JY7hXXIiyEQ/gjGw5ylw6z2zqnUxn5VFE3OriwpenUEVBIw+a
+  y5b8WxLLxxJlkmUYJg6sqVfKdZZ6wkxNijvNXDI/LnRz+3w3PbazAlJoxOtpe9FT
+  eNKu5mLKlWQ1xvp0j5YKUQ7s1QWCRry4E50+RWxDZ6VsR/SxK1LNhAYriphW3sfL
+  iA+ZeOECgYEA8FuVXoHNXKzg6xaQ18HkqyusT8YIMrjHnqV0MJGUjBewEsyqUiWq
+  8V7kAJBUwm7omuzWFwbO0X12TLvvB6uoc6LVVuABVtqmwFhO6xIF06gtXStPDhXd
+  OI1Xy1D6KEtxt1pXzo5Tez8w6Dpt6N9EZxsjnlejxObQyWv2WUIddc0CgYEA6CQX
+  mJYeSrOksyrnYbI4vD2tAe1pOiwyISx8mV1OetfA/JcrIoN4sqo9GycRInJ2ehZn
+  Wh2kenOKq0EWSdmEsUqmz3Q3Q81FQBF6rztwACMJ4S2FU3eL85+UA0NxjEVzai68
+  BKhKZqLjNVfz6FEuG2mQkVPwx8hdLfVB9KWTZ3kCgYAtDi3gyloxniKHTvKVzz3L
+  LGOfjJKq12JsBb3TAOckn6gczgq7XV4+4rfAt018KQgnSnATXu5T7L3JQo1bFb18
+  97AgGduGaXRKqAMbI4S+GU9voJewHz8Zw70KWsKZ3RKS+Tdue9WAS+ciERnbRkbv
+  QPIbU3hah53ps/g44SDenQKBgQDOGHz6cwyhtavbhZO3IMtOFFOtCmIJy4MWALD+
+  V+B9H1+u4WbiVWaq+IkXui90LbsR2SIY14hXTo0mTbrEBeHQpT5DoCIQiAWbQ+lv
+  +Y0OEg2LZSahW9lciaiW3SHKLz6wXp1+ZQro5GRjz5oz/x64J5i57ZQvSquvSbcs
+  xHOBwQKBgGgZpQf+8GAm1wcq9MaTTsJdXjPGMK9QtMNc/aGu+8nAojGvY5QeDurH
+  MqaF0UmYTSWjqKSBgyoBVi/Dknj2g+ZT0DlIuZAawliKb21MQFwVr0KIjusCucWi
+  Dr/xNh9ugct+FL72EvY5ihz+qEIX0quvlrPgWifDbHUCUEfdTPwE
+  -----END RSA PRIVATE KEY-----
+ssh_host_keys:
+  ssh_host_keys:
+    repo: '# 192.168.50.11:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.10 192.168.50.11
+      ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDojjWXmlEyod6GUzeE02sqcnEmjMscvQfAc4F/USgl9A1QzoQkbZ66A9sv5AUtIYzs0QqdFq5/hKhNwsZzKmUOzYe99OBaTK60v5Tn9Vy1Z4j872hhDQwWWqXsppyrmjgweyCyLZpP6T8tOitKYWRUZuko982d6YVSEV/Dc149w5ISUBVg4HDGCtFcNggL3FncCKENgQJ1E4Ekj6k0f3Zm2pjTeUPmXoOy+rSvxbLut5RvGD1jw/URVcejKiPy91p5gKBW2f78fbjicQADb2Spn+PhX7Js9H8qUj6JgzM8X/EkSapqt/KvnEPGHm5AcmwNeKHZPOHjQJFWcCUjpgCX
+      # 192.168.50.11:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.10 192.168.50.11 ecdsa-sha2-nistp256
+      AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCtykGqAtNRg4mZ8EC2y7g7x0W3tZ2ZFv63DEcCCvTDxBd2u8OYsv+z+A+knyvsyxHMt617BcE9pX8fVZwp8Idg=
+      # 192.168.50.11:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.10 192.168.50.11 ssh-ed25519
+      AAAAC3NzaC1lZDI1NTE5AAAAICxHSHku6zCOD2r3PRLqtuVQjxEZvhbUJhVulZhzhaL7'
+    '#': '# github.com:22 SSH-2.0-babeld-70f1bac9 github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr/C56SJMy/BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9/hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS/YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4/WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1/wsjk=
+      # github.com:22 SSH-2.0-babeld-70f1bac9 github.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
+      # github.com:22 SSH-2.0-babeld-70f1bac9 github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl'
+jenkins-agent::gpg_key_id: FD88CD77
+jenkins-agent::gpg_private_key: |-
+  -----BEGIN PGP PRIVATE KEY BLOCK-----
+  Version: GnuPG v1
+  
+  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
+  =QR7I
+  -----END PGP PRIVATE KEY BLOCK-----
+jenkins-agent::gpg_public_key: |-
+  -----BEGIN PGP PUBLIC KEY BLOCK-----
+  Version: GnuPG v1
+  
+  mQENBGT7bCEBCAD2XrvacLEWMXFYTJzcOS78xX25YtG5jPDYXckmiFU+L4u1An53
+  HxbLKFzaum8Hz80xoXKrlvVe7ii66W/mjTgpA9dThslgpWpocJ+qivrekZNKgTyy
+  +lQc2Wuqa0vABOiIYdkP6jhZxKvg5XN2rkho0oaDhir8+qEdtPFp3xQYA/NC/+6p
+  LbLkh7ivlUC80CFTZ9UFVqfNfyLaigemJl710sl/iAg6Y3mIjC9iO57MALAD+amI
+  RevHfrLUgKGA7Yh1cSSwkzvLVCT3HmMIf/L5+To4AGsFNqXcncjlX2eEeB9fqG6Z
+  PMxJPiByNfrG9vBG3VtcgLPYrqG8WC607iJXABEBAAG0JGFkbWluIChObyBDb21t
+  ZW50KSA8YWRtaW5AZ21haWwuY29tPokBOAQTAQIAIgUCZPtsIQIbAwYLCQgHAwIG
+  FQgCCQoLBBYCAwECHgECF4AACgkQVlQFov2IzXcv2ggAsE0+h9/5RMTg7OZ/Vi5D
+  Ve8dES4Bow5E/DhrEYG37SKmzWo8CnjIrthYnxUGoyBnJBurUhNA8zO0Yqr/tTL4
+  fZJCFc7/lKTsc3SR5Cvgb4Yri1Msn4a5Kugvbq/QbGhQAMQHqm8USDlYpwkc4uy4
+  GoIwcuhypbW+bxgzgQ0nrwQvzYx8nqG01gLRHSDn9eJjTCoN0kgidEvRAv8oDTfX
+  /9q/zzFJax4QefbtdaHeoGAypJ2K1JPcDp1uQn2oPKOc20lW46TXHO/ZlZ7Fo3si
+  p6QyztGFDyY+8k23bJ9/MZMFQTV7Yj3AVDzCOGddWx17CwZn+gSWP+dJqhAWuV8Y
+  zrkBDQRk+2whAQgApPZB15VqtsWwbhvfkAnUo/tlf1a4HggHRoR4WTlvb533Mn4X
+  gt9OwLi5uZXIFEuYtBLAccAkj9RSqLxERmI13z0glEFkLuwtOTsqhN/zXEb/+vHa
+  dG3YhF0ZyW/McauJRYCuPhwkMMS+tphhise5cq5XszkURH5B6E5jUjJF+aQU6qGs
+  4OCFmJnMk/IJSqMSK7/l6F1Zv+oESzKzcybYEUhumAA2d7KLVk4tbpwKF5ZVGBTg
+  ZAIami4gyrF0m3idwJE8gAPXbkIhtPqsRllvBfHKZ4mAWZp8cPDQvw/aARdser1m
+  s+CEKfJEBFgMSIM4tvK3FYIlsvpIWu97pa47GQARAQABiQEfBBgBAgAJBQJk+2wh
+  AhsMAAoJEFZUBaL9iM13fJYIAJYwZMHjth5N1AWKssn9yyrA+aat+Z1CPzX4lmk7
+  kckNIc9pgI9rA1dZHWihWPQvFIARLAoTPsGpNUc4zYTwJNOy/odtKvLDQRt302Hw
+  LwOKXhwR3Q5W/dnXx8teSlZ+rbw8NvleDdqw0jU1kUH/J6oDCgwK/iDq+CGEV8sb
+  Jw98nVVBFoGG6/LBEiyd+d+FxKMBXkT/aq7OssithLQEF3ZLOZfBiCQBzvojLdhL
+  RQOm9H3DBQ7dRLFyJ+P8g13lE8tm/GzK/pvGtEAxKAvMyc08Xeez4vI6KKuQoXak
+  6ZEwxxzYdr8CK1uO9S5cOiCJJD3dGOvfdLi2hlSVYXgSKvY=
+  =g1Jg
+  -----END PGP PUBLIC KEY BLOCK-----
+jenkins-agent::reprepro_updater_config: "[ubuntu_building]\narchitectures: amd64 source\n\
+  distros: focal\nrepository_path: /var/repos/ubuntu/building\nsigning_key: FD88CD77\n\
+  upstream_config: /home/jenkins-agent/reprepro_config\n\n[ubuntu_testing]\narchitectures:\
+  \ amd64 source\ndistros: focal\nrepository_path: /var/repos/ubuntu/testing\nsigning_key:\
+  \ FD88CD77\nupstream_config: /home/jenkins-agent/reprepro_config\n\n[ubuntu_main]\n\
+  architectures: amd64 source\ndistros: focal\nrepository_path: /var/repos/ubuntu/main\n\
+  signing_key: FD88CD77\nupstream_config: /home/jenkins-agent/reprepro_config\n"
+jenkins-agent::reprepro_config:
+  '/home/jenkins-agent/reprepro_config/ros_bootstrap.yaml':
+    ensure: 'present'
+    content: |
+      name: ros_bootstrap
+      method: http://repos.ros.org/repos/ros_bootstrap
+      suites: [focal]
+      component: main
+      architectures: [amd64, source]
+      verify_release: blindtrust
